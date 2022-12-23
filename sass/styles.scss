@@ -6,10 +6,10 @@ body {
 a {
     text-decoration: none;
     color: #000000;
-}
 
-a:hover {
-    color: #000000;
+    :hover {
+        color: #000000;
+    }
 }
 
 li {
@@ -52,10 +52,10 @@ h4 {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}
 
-#logo img {
-    width: 10rem;
+    img {
+        width: 10rem;
+    }
 }
 
 #recherche form {
@@ -72,7 +72,7 @@ h4 {
 
 #recherche form i {
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 10px;
     color: #000000;
 }
@@ -216,7 +216,7 @@ footer {
 }
 
 footer img {
-    filter: invert();
+    filter: invert;
     width: 100px;
 }
 
