@@ -181,17 +181,28 @@ h4 {
   margin-top: 0px;
   margin-bottom: 11px;
 }
+#restaurants input[type=checkbox] {
+  display: none;
+}
+#restaurants input[type=checkbox]:checked ~ .checked {
+  opacity: 1;
+  transition: opacity 3s;
+}
+#restaurants input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+#restaurants .checked {
+  opacity: 0;
+  background: linear-gradient(#a65cdc, #e070db);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
 #restaurants i {
   height: 50px;
   line-height: 50px;
   font-size: 1.5rem;
-}
-#restaurants i.active {
-  background: linear-gradient(#a65cdc, #e070db);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
 }
 
 footer {
