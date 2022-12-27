@@ -72,6 +72,20 @@ h4 {
   top: 10px;
   color: #000000;
 }
+#recherche form button {
+  width: 250px;
+  height: 50px;
+  background: linear-gradient(#e070db, #a65cdc);
+  border: none;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-size: 18px;
+  box-shadow: 2px 2px 15px 1px #757575;
+}
+#recherche form button:hover {
+  background: linear-gradient(#de8eda, #b581da);
+  box-shadow: 2px 2px 15px 3px #757575;
+}
 
 #lieu {
   border: none;
@@ -81,17 +95,6 @@ h4 {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 1rem;
-}
-
-#recherche button {
-  width: 250px;
-  height: 50px;
-  background: linear-gradient(#e070db, #a65cdc);
-  border: none;
-  border-radius: 25px;
-  color: #FFFFFF;
-  font-size: 18px;
-  box-shadow: 2px 2px 15px 1px #757575;
 }
 
 #fonctionnement {
@@ -132,11 +135,12 @@ h4 {
   color: #838383;
   left: -10px;
 }
-#fonctionnement li i.pictoactive {
-  color: #9356dc;
-}
-#fonctionnement li.etapeactive {
+#fonctionnement li:hover {
   background-color: #f5edff;
+  box-shadow: 2px 2px 5px 3px #b6b5b5;
+}
+#fonctionnement li:hover i.picto {
+  color: #9356dc;
 }
 
 #restaurants {

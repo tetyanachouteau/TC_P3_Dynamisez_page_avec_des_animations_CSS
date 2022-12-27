@@ -76,6 +76,21 @@ h4 {
             top: 10px;
             color: #000000;
         }
+
+        button {
+            width: 250px;
+            height: 50px;
+            background: linear-gradient(#e070db, #a65cdc);
+            border: none;
+            border-radius: 25px;
+            color: #FFFFFF;
+            font-size: 18px;
+            box-shadow: 2px 2px 15px 1px #757575;
+            &:hover {
+                background: linear-gradient(#de8eda, #b581da);
+                box-shadow: 2px 2px 15px 3px #757575;
+            }
+        }
     }
 }
 
@@ -87,19 +102,6 @@ h4 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1rem;
-}
-
-#recherche {
-    button {
-        width: 250px;
-        height: 50px;
-        background: linear-gradient(#e070db, #a65cdc);
-        border: none;
-        border-radius: 25px;
-        color: #FFFFFF;
-        font-size: 18px;
-        box-shadow: 2px 2px 15px 1px #757575;
-    }
 }
 
 #fonctionnement {
@@ -144,13 +146,13 @@ h4 {
             left: -10px;
         }
 
-        i.pictoactive {
-            color: #9356dc;
+        &:hover{
+            background-color: #f5edff;
+            box-shadow: 2px 2px 5px 3px #b6b5b5;
+            i.picto {
+                color: #9356dc;
+            }
         }
-    }
-
-    li.etapeactive {
-        background-color: #f5edff;
     }
 }
 
