@@ -48,17 +48,27 @@ h4 {
 }
 
 #loader {
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
     z-index: 1;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: #9356dc;
     opacity: 50%;
     animation-name: disparition;
-    animation-duration:  3s;
-    animation-timing-function: steps(1,end);
+    animation-duration: 3s;
+    animation-timing-function: steps(1, end);
+
+    i {
+        animation: rotation 1.2s linear infinite;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 #logo {
@@ -100,6 +110,7 @@ h4 {
             color: #FFFFFF;
             font-size: 18px;
             box-shadow: 2px 2px 15px 1px #757575;
+
             &:hover {
                 background: linear-gradient(#de8eda, #b581da);
                 box-shadow: 2px 2px 15px 3px #757575;
@@ -160,9 +171,10 @@ h4 {
             left: -10px;
         }
 
-        &:hover{
+        &:hover {
             background-color: #f5edff;
             box-shadow: 2px 2px 5px 3px #b6b5b5;
+
             i.picto {
                 color: #9356dc;
             }
@@ -271,11 +283,20 @@ footer {
 
 @keyframes disparition {
     from {
-        width: 100%;
-        height: 100%;
+        visibility: visible;
     }
+
     to {
-        width: 0;
-        height: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
