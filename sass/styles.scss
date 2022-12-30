@@ -30,6 +30,8 @@ h2 {
 
 h3 {
     font-size: 1rem;
+    font-weight: 100;
+    color: #838383;
     margin-top: 0px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -71,11 +73,17 @@ h4 {
     }
 }
 
+header {
+    box-shadow: 0px 1px 5px 1px #c6c4c4;
+    position: relative;
+    z-index: 1;
+}
+
 #logo {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     img {
         width: 10rem;
@@ -92,12 +100,13 @@ h4 {
 
         p {
             display: flex;
+            margin: 0;
         }
 
         i {
             position: absolute;
             left: 25%;
-            top: 10px;
+            top: 15px;
             color: #000000;
         }
 
@@ -109,11 +118,11 @@ h4 {
             border-radius: 25px;
             color: #FFFFFF;
             font-size: 18px;
-            box-shadow: 2px 2px 15px 1px #757575;
+            box-shadow: 2px 2px 5px 1px #757575;
 
             &:hover {
                 background: linear-gradient(#de8eda, #b581da);
-                box-shadow: 2px 2px 15px 3px #757575;
+                box-shadow: 2px 2px 7px 3px #757575;
             }
         }
     }
@@ -124,9 +133,14 @@ h4 {
     background-color: #eaeaea;
     width: 100%;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 1rem;
+
+    &::placeholder {
+        color: #535353;
+        font-weight: bold;
+    }
 }
 
 #fonctionnement {
@@ -138,6 +152,12 @@ h4 {
     ul {
         padding: 0;
         margin: 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
     }
 
     li {
@@ -149,6 +169,8 @@ h4 {
         margin-bottom: 20px;
         box-shadow: 2px 2px 5px 1px #b6b5b5;
         padding-left: 40px;
+        padding-right: 10px;
+        font-weight: bold;
 
         i {
             width: 1.5rem;
@@ -186,6 +208,15 @@ h4 {
     background: #F2F2F2;
     padding: 15px;
 
+    @media screen and (min-width: 768px) {
+        article {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+
     figure {
         background-color: #FFFFFF;
         position: relative;
@@ -193,6 +224,10 @@ h4 {
         margin-bottom: 31px;
         border-radius: 10px;
         box-shadow: 2px 2px 5px 1px #b6b5b5;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 45%;
+        }        
     }
 
     label.new {
