@@ -1,0 +1,95 @@
+@import 'layout';
+
+#logo {
+    i {
+        position: absolute;
+        top: 25px;
+        left: 40px;
+    }
+}
+
+img.palette {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+button.valider {
+    z-index: 3;
+    width: 132px;
+    height: 60px;
+    background: #99E2D0;
+    border: 0;
+    border-radius: 0px 15px 15px 0px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button.commander {
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(#e070db, #a65cdc);
+    border: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 1px #757575;
+}
+
+#menu {
+    position: relative;
+    top: -40px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 40px 40px 0px 0px;
+
+    h1 {
+        font-family: 'Shrikhand';
+    }
+}
+
+#title {
+    display: flex;
+    justify-content: space-between;
+
+    label {
+        padding-right: 50px;
+    }
+
+    @import 'composant';
+}
+
+section.entrees,
+section.plats,
+section.desserts {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+    div.barre {
+        background-color: #99E2D0;
+        width: 45px;
+        border: 0;
+        height: 5px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 20px;
+    }
+
+    li {
+        height: 60px;
+        background: #fff;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 5px 1px #b6b5b5;
+        padding-left: 40px;
+        font-weight: bold;
+
+    }
+}

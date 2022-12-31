@@ -1,53 +1,4 @@
-body {
-    font-family: 'Roboto';
-    margin: 0px;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-
-    :hover {
-        color: #000000;
-    }
-}
-
-li {
-    list-style-type: none;
-}
-
-h1 {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 1.5rem;
-}
-
-h2 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    margin-top: 0px;
-}
-
-h3 {
-    font-size: 1rem;
-    font-weight: 100;
-    color: #838383;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-h4 {
-    margin-top: 4px;
-    margin-bottom: 9px;
-}
-
-#container {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
+@import 'layout';
 
 #loader {
     width: 100%;
@@ -70,23 +21,6 @@ h4 {
         animation: rotation 1.2s linear infinite;
         font-size: 3rem;
         line-height: 3rem;
-    }
-}
-
-header {
-    box-shadow: 0px 1px 5px 1px #c6c4c4;
-    position: relative;
-    z-index: 1;
-}
-
-#logo {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    img {
-        width: 10rem;
     }
 }
 
@@ -227,7 +161,7 @@ header {
 
         @media screen and (min-width: 768px) {
             flex-basis: 45%;
-        }        
+        }
     }
 
     label.new {
@@ -259,62 +193,10 @@ header {
         margin-bottom: 11px;
     }
 
-    input[type="checkbox"] {
-        display: none;
-
-        &:checked~.checked {
-            opacity: 1;
-            transition: opacity 3s;
-        }
-
-        &:checked~.unchecked {
-            display: none;
-        }
-    }
-
-    .checked {
-        opacity: 0;
-        background: linear-gradient(#a65cdc, #e070db);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
-
-    i {
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.5rem;
-    }
+    @import 'composant';
 }
 
-footer {
-    background: #353535;
-    color: #FFFFFF;
-    padding: 25px 70px 70px 20px;
-    margin: 0;
 
-    img {
-        filter: invert(100%);
-        width: 100px;
-    }
-
-    ul {
-        padding: 0;
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        i {
-            width: 20px;
-            margin-right: 5px;
-        }
-
-        a {
-            color: #FFFFFF;
-        }
-    }
-}
 
 @keyframes disparition {
     from {
