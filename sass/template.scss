@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #838383;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h4 {
+    margin-top: 4px;
+    margin-bottom: 9px;
+}
+
+#container {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    box-shadow: 0px 1px 5px 1px #c6c4c4;
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img {
+        width: 10rem;
+    }
+    i{
+        position:absolute;
+        top:20px;
+        left:40px;
+    }
+}
+
+.palette {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.valider {
+    z-index: 3;
+    width: 132px;
+    height: 49px;
+    background: #00fcc5;
+    border: 1px solid #00fcb0;
+    border-radius: 0px 15px 15px 0px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.commander {
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(#e070db, #a65cdc);
+    border: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 1px #757575;
+}
+
+
+
+section #entrees #plats #dessert {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+    ul {
+        padding: 0;
+        margin: 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+    }
+
+    li {
+        height: 60px;
+        background: #f7f7f7;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 5px 1px #b6b5b5;
+        padding-left: 40px;
+        padding-right: 10px;
+        font-weight: bold;
+
+    }
+}
+
+    footer {
+        background: #353535;
+        color: #FFFFFF;
+        padding: 25px 70px 70px 20px;
+        margin: 0;
+
+        img {
+            filter: invert(100%);
+            width: 100px;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            i {
+                width: 20px;
+                margin-right: 5px;
+            }
+
+            a {
+                color: #FFFFFF;
+            }
+        }
+    }
