@@ -8,6 +8,10 @@
     }
 }
 
+main{
+    background-color: $gray-backgroud;
+}
+
 img.palette {
     width: 100%;
     height: 200px;
@@ -40,7 +44,7 @@ button.commander {
 #menu {
     position: relative;
     top: -40px;
-    background-color: rgb(244, 244, 244);
+    background-color: $gray-backgroud;
     border-radius: 40px 40px 0px 0px;
 
     h1 {
@@ -92,4 +96,9 @@ section.desserts {
         font-weight: bold;
 
     }
+}
+
+#commander {
+    display: flex;
+    justify-content: center;
 }
