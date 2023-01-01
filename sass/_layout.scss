@@ -1,5 +1,21 @@
 $gray-backgroud: #f9f9f9;
 
+@mixin boutonrose {
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(#e070db, #a65cdc);
+    border: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 1px #757575;
+
+    &:hover {
+        background: linear-gradient(#de8eda, #b581da);
+        box-shadow: 2px 2px 7px 3px #757575;
+    }
+}
+
 body {
     font-family: 'Roboto';
     margin: 0px;
@@ -28,21 +44,6 @@ h2 {
     font-size: 1.2rem;
     margin-bottom: 8px;
     margin-top: 0px;
-}
-
-h3 {
-    font-size: 1rem;
-    font-weight: 100;
-    color: #838383;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-h4 {
-    margin-top: 4px;
-    margin-bottom: 9px;
 }
 
 #container {
@@ -94,5 +95,15 @@ footer {
         a {
             color: #FFFFFF;
         }
+    }
+}
+
+@keyframes disparition {
+    from {
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
     }
 }

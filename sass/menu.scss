@@ -1,5 +1,18 @@
 @import 'layout';
 
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+h4 {
+    color: #838383;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
 #logo {
     i {
         position: absolute;
@@ -8,7 +21,7 @@
     }
 }
 
-main{
+main {
     background-color: $gray-backgroud;
 }
 
@@ -16,29 +29,6 @@ img.palette {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-button.valider {
-    z-index: 3;
-    width: 132px;
-    height: 60px;
-    background: #99E2D0;
-    border: 0;
-    border-radius: 0px 15px 15px 0px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-button.commander {
-    width: 250px;
-    height: 50px;
-    background: linear-gradient(#e070db, #a65cdc);
-    border: none;
-    border-radius: 25px;
-    color: #FFFFFF;
-    font-size: 18px;
-    box-shadow: 2px 2px 5px 1px #757575;
 }
 
 #menu {
@@ -52,7 +42,7 @@ button.commander {
     }
 }
 
-#title {
+#titre {
     display: flex;
     justify-content: space-between;
 
@@ -95,10 +85,54 @@ section.desserts {
         padding-left: 40px;
         font-weight: bold;
 
+        div.assiette {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 100%;
+            margin-right: 20px;
+        }
+
+        div.prix {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        button.valider {
+            width: 0px;
+            height: 60px;
+            padding: 0;
+            background: #99E2D0;
+            border: 0;
+            border-radius: 0px 15px 15px 0px;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 18px;
+            transition: width 1s;
+
+            i {
+                visibility: hidden;
+                animation-name: disparition;
+                animation-delay: 1s;
+                animation-timing-function: steps(1, end);
+                animation-direction: reverse;
+            }
+        }
+
+        &:hover button.valider {
+            width: 50px;
+
+            i {
+                visibility: visible;
+            }
+        }
     }
 }
 
 #commander {
     display: flex;
     justify-content: center;
+}
+
+button.commander {
+    @import 'boutonrose';
 }

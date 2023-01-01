@@ -27,21 +27,6 @@ h2 {
   margin-top: 0px;
 }
 
-h3 {
-  font-size: 1rem;
-  font-weight: 100;
-  color: #838383;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-h4 {
-  margin-top: 4px;
-  margin-bottom: 9px;
-}
-
 #container {
   margin: 0;
   padding-left: 0;
@@ -86,6 +71,38 @@ footer ul i {
 }
 footer ul a {
   color: #FFFFFF;
+}
+
+@-webkit-keyframes disparition {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes disparition {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #838383;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h4 {
+  margin-top: 4px;
+  margin-bottom: 9px;
 }
 
 #loader {
@@ -299,23 +316,6 @@ footer ul a {
   font-size: 1.5rem;
 }
 
-@-webkit-keyframes disparition {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-
-@keyframes disparition {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
 @-webkit-keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -324,6 +324,7 @@ footer ul a {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
