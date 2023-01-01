@@ -221,6 +221,27 @@ section.desserts li {
   overflow: hidden;
   -webkit-animation: fadeIn 2s ease-out;
           animation: fadeIn 2s ease-out;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+section.entrees li:nth-child(1),
+section.plats li:nth-child(1),
+section.desserts li:nth-child(1) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+section.entrees li:nth-child(2),
+section.plats li:nth-child(2),
+section.desserts li:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+section.entrees li:nth-child(3),
+section.plats li:nth-child(3),
+section.desserts li:nth-child(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 section.entrees li div.assiette,
 section.plats li div.assiette,
@@ -242,7 +263,7 @@ section.plats li div.prix,
 section.desserts li div.prix {
   display: flex;
   align-items: flex-end;
-  justify-content: end;
+  justify-content: flex-end;
 }
 section.entrees li button.valider,
 section.plats li button.valider,

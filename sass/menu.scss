@@ -92,6 +92,14 @@ section.desserts {
         font-weight: bold;
         overflow: hidden;
         animation: fadeIn 2s ease-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{($i - 1) * 200}ms;
+            }
+        }
 
         div.assiette {
             display: flex;
@@ -109,7 +117,7 @@ section.desserts {
         div.prix {
             display: flex;
             align-items: flex-end;
-            justify-content: end;
+            justify-content: flex-end;
         }
 
         button.valider {
