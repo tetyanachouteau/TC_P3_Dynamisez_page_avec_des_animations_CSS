@@ -4,6 +4,9 @@ h3 {
     font-size: 1.1rem;
     margin-bottom: 4px;
     margin-top: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h4 {
@@ -11,6 +14,9 @@ h4 {
     font-size: 0.9rem;
     margin-top: 4px;
     margin-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #logo {
@@ -84,47 +90,52 @@ section.desserts {
         box-shadow: 2px 2px 5px 1px #b6b5b5;
         padding-left: 40px;
         font-weight: bold;
+        overflow: hidden;
+        animation: fadeIn 2s ease-out;
 
         div.assiette {
             display: flex;
             justify-content: space-between;
-            flex-basis: 100%;
             margin-right: 20px;
+            flex-basis: 100%;
+            overflow: hidden;
+            gap: 20px
+        }
+
+        div.titre {
+            overflow: hidden;
         }
 
         div.prix {
             display: flex;
             align-items: flex-end;
+            justify-content: end;
         }
 
         button.valider {
-            width: 0px;
+            width: 50px;
             height: 60px;
             padding: 0;
+            right: 50px;
             background: #99E2D0;
             border: 0;
-            border-radius: 0px 15px 15px 0px;
             color: #FFFFFF;
             font-weight: 700;
-            font-size: 18px;
-            transition: width 1s;
-
-            i {
-                visibility: hidden;
-                animation-name: disparition;
-                animation-delay: 1s;
-                animation-timing-function: steps(1, end);
-                animation-direction: reverse;
-            }
+            font-size: 1.5rem;
+            transition: right 1s;
+            overflow: hidden;
+            right: -50px;
+            position: relative;
         }
 
         &:hover button.valider {
-            width: 50px;
+            right: 0;
 
             i {
-                visibility: visible;
+                animation: rotation 500ms linear 500ms;
             }
         }
+
     }
 }
 
@@ -134,5 +145,15 @@ section.desserts {
 }
 
 button.commander {
-    @import 'boutonrose';
+    @include boutonrose;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

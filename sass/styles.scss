@@ -60,7 +60,7 @@ h4 {
         }
 
         button {
-           @import 'boutonrose';
+           @include boutonrose;
         }
     }
 }
@@ -197,14 +197,4 @@ h4 {
     }
 
     @import 'composant';
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }

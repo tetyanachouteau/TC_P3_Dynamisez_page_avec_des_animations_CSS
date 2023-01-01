@@ -90,6 +90,22 @@ footer ul a {
     visibility: hidden;
   }
 }
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 h3 {
   font-size: 1rem;
   font-weight: 100;
@@ -314,22 +330,4 @@ h4 {
   height: 50px;
   line-height: 50px;
   font-size: 1.5rem;
-}
-
-@-webkit-keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }/*# sourceMappingURL=styles.css.map */
