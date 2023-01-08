@@ -243,15 +243,13 @@ section.desserts li:nth-child(3) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
-section.entrees li div.assiette,
-section.plats li div.assiette,
-section.desserts li div.assiette {
+section.entrees li div.mouv,
+section.plats li div.mouv,
+section.desserts li div.mouv {
   display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-  flex-basis: 100%;
-  overflow: hidden;
-  gap: 20px;
+  right: -50px;
+  position: relative;
+  transition: right 1s;
 }
 section.entrees li div.titre,
 section.plats li div.titre,
@@ -261,9 +259,8 @@ section.desserts li div.titre {
 section.entrees li div.prix,
 section.plats li div.prix,
 section.desserts li div.prix {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  padding-top: 30px;
+  padding-right: 20px;
 }
 section.entrees li button.valider,
 section.plats li button.valider,
@@ -271,25 +268,21 @@ section.desserts li button.valider {
   width: 50px;
   height: 60px;
   padding: 0;
-  right: 50px;
   background: #99E2D0;
   border: 0;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 1.5rem;
-  transition: right 1s;
   overflow: hidden;
-  right: -50px;
-  position: relative;
 }
-section.entrees li:hover button.valider,
-section.plats li:hover button.valider,
-section.desserts li:hover button.valider {
+section.entrees li:hover div.mouv,
+section.plats li:hover div.mouv,
+section.desserts li:hover div.mouv {
   right: 0;
 }
-section.entrees li:hover button.valider i,
-section.plats li:hover button.valider i,
-section.desserts li:hover button.valider i {
+section.entrees li:hover div.mouv i,
+section.plats li:hover div.mouv i,
+section.desserts li:hover div.mouv i {
   -webkit-animation: rotation 500ms linear 500ms;
           animation: rotation 500ms linear 500ms;
 }

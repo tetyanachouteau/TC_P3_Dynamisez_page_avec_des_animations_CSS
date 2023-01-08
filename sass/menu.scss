@@ -101,13 +101,11 @@ section.desserts {
             }
         }
 
-        div.assiette {
+        div.mouv {
             display: flex;
-            justify-content: space-between;
-            margin-right: 20px;
-            flex-basis: 100%;
-            overflow: hidden;
-            gap: 20px
+            right: -50px;
+            position: relative;
+            transition: right 1s;
         }
 
         div.titre {
@@ -115,28 +113,23 @@ section.desserts {
         }
 
         div.prix {
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
+            padding-top: 30px;
+            padding-right: 20px;
         }
 
         button.valider {
             width: 50px;
             height: 60px;
             padding: 0;
-            right: 50px;
             background: #99E2D0;
             border: 0;
             color: #FFFFFF;
             font-weight: 700;
             font-size: 1.5rem;
-            transition: right 1s;
             overflow: hidden;
-            right: -50px;
-            position: relative;
         }
 
-        &:hover button.valider {
+        &:hover div.mouv {
             right: 0;
 
             i {
