@@ -156,6 +156,13 @@ img.francaise {
      object-fit: cover;
 }
 
+img.delice {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #menu {
   position: relative;
   top: -40px;
