@@ -205,6 +205,14 @@ section.desserts ul {
   padding: 0;
   margin: 20px;
 }
+@media only screen and (min-width: 1024px) {
+  section.entrees ul,
+section.plats ul,
+section.desserts ul {
+    display: flex;
+    gap: 20px;
+  }
+}
 section.entrees li,
 section.plats li,
 section.desserts li {
@@ -225,6 +233,13 @@ section.desserts li {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+@media only screen and (min-width: 1024px) {
+  section.entrees li,
+section.plats li,
+section.desserts li {
+    width: 300px;
+  }
+}
 section.entrees li:nth-child(1),
 section.plats li:nth-child(1),
 section.desserts li:nth-child(1) {
@@ -243,13 +258,20 @@ section.desserts li:nth-child(3) {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
+section.entrees li:nth-child(4),
+section.plats li:nth-child(4),
+section.desserts li:nth-child(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
 section.entrees li div.mouv,
 section.plats li div.mouv,
 section.desserts li div.mouv {
   display: flex;
   right: -50px;
+  margin-left: -50px;
   position: relative;
-  transition: right 1s;
+  transition: all 1s;
 }
 section.entrees li div.titre,
 section.plats li div.titre,
@@ -279,6 +301,7 @@ section.entrees li:hover div.mouv,
 section.plats li:hover div.mouv,
 section.desserts li:hover div.mouv {
   right: 0;
+  margin-left: 0;
 }
 section.entrees li:hover div.mouv i,
 section.plats li:hover div.mouv i,
