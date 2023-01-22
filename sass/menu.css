@@ -211,6 +211,7 @@ section.plats ul,
 section.desserts ul {
     display: flex;
     gap: 20px;
+    justify-content: space-between;
   }
 }
 section.entrees li,
@@ -237,7 +238,7 @@ section.desserts li {
   section.entrees li,
 section.plats li,
 section.desserts li {
-    width: 300px;
+    flex-basis: 30%;
   }
 }
 section.entrees li:nth-child(1),
