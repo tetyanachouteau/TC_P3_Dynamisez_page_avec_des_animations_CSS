@@ -1,26 +1,29 @@
-input[type="checkbox"] {
-    display: none;
-
-    &:checked~.checked {
-        opacity: 1;
-        transition: opacity 3s;
-    }
-
-    &:checked~.unchecked {
+@mixin coeur($height:50px) {
+    input[type="checkbox"] {
         display: none;
+
+        &:checked~.checked {
+            opacity: 1;
+            transition: opacity 3s;
+        }
+
+        &:checked~.unchecked {
+            display: none;
+        }
     }
-}
 
-.checked {
-    opacity: 0;
-    background: linear-gradient(#a65cdc, #e070db);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
+    .checked {
+        opacity: 0;
+        background: linear-gradient(#a65cdc, #e070db);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
 
-i {
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.5rem;
+    i {
+        height: $height;
+        line-height: $height;
+        font-size: 1.5rem;
+        color: #AAA;
+    }
 }

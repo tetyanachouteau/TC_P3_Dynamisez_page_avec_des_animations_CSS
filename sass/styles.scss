@@ -49,14 +49,15 @@ h4 {
         background-color: #f7f7f7;
 
         p {
-            display: flex;
             margin: 0;
+            background-color: #eaeaea;
+            display: flex;
+            justify-content: center;
         }
 
         i {
-            position: absolute;
-            left: 25%;
-            top: 15px;
+            height: 48px;
+            line-height: 48px;
             color: #000000;
         }
 
@@ -69,7 +70,6 @@ h4 {
 #lieu {
     border: none;
     background-color: #eaeaea;
-    width: 100%;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
