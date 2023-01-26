@@ -178,9 +178,10 @@ img.fond {
   -moz-text-fill-color: transparent;
 }
 #titre i {
-  height: 50px;
-  line-height: 50px;
+  height: 67px;
+  line-height: 67px;
   font-size: 1.5rem;
+  color: #AAA;
 }
 
 section.entrees,

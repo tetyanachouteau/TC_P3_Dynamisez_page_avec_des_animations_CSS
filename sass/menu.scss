@@ -1,4 +1,5 @@
 @import 'layout';
+@import 'composant';
 
 h3 {
     font-size: 1.1rem;
@@ -56,7 +57,7 @@ img.fond {
         padding-right: 50px;
     }
 
-    @import 'composant';
+    @include coeur(67px);
 }
 
 section.entrees,
